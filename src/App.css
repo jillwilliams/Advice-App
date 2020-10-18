@@ -1,0 +1,79 @@
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.App {
+    height: 100%;
+    background-image: url('./images/pic1.png');
+    font-family: "Shadows Into Light";
+    font-size: 0.9rem;
+    color: blue;
+    text-shadow: 1px 1px 3px violet;
+    letter-spacing: 3px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card {
+    background-color: lightgrey;
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 5%;
+    box-shadow: 10px 10px;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    height: 580px;
+}
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 180px;
+    opacity: 1;
+    background-color: white;
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: blue;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+
+}
+.button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.6s;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg) translate3d(0, 0, 0)}
+    25% { transform: rotate(3deg) translate3d(0, 0, 0)}
+    50% { transform: rotate(-3deg) translate3d(0, 0, 0)}
+    75% { transform: rotate(0deg) translate3d(0, 0, 0)}
+    100% { transform: rotate(3deg) translate3d(0, 0, 0)}
+}
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+}
