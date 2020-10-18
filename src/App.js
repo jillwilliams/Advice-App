@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-//adviceSlip JSON api
-//netlify deploy: vigorous-poincare-4feff3
+//advice Slip JSON api
+//netlify deploy: https://vigorous-poincare-4feff3.netlify.app
 class App extends React.Component {
     state = { advice: '' };
 
